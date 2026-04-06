@@ -33,7 +33,7 @@ export function TextInput({ screen, onAnswer }: Props) {
       <motion.button
         data-testid="continue-button"
         className="w-full py-3.5 rounded-xl font-bold text-sm text-white disabled:opacity-40 transition-opacity"
-        style={{ background: value.trim() ? 'hsl(341 91% 58%)' : undefined, backgroundColor: !value.trim() ? 'hsl(0 0% 70%)' : undefined }}
+        style={{ background: value.trim() ? 'hsl(341 91% 58%)' : 'hsl(222 19% 24%)' }}
         disabled={!value.trim()}
         onClick={() => value.trim() && onAnswer(value.trim())}
         whileTap={{ scale: 0.98 }}
