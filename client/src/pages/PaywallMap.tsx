@@ -19,7 +19,7 @@ import { HelpidoPaywall } from '@/components/paywalls/HelpidoPaywall';
 import { useToast } from '@/hooks/use-toast';
 
 const PAYWALLS = [
-  { id: 'A', name: 'SmartyMe', desc: 'Countdown + Trial Hybrid', color: '#FF2A6D', Component: SmartyMePaywall },
+  { id: 'A', name: 'SmartyMe', desc: 'Countdown + Trial Hybrid', color: '#F5326D', Component: SmartyMePaywall },
   { id: 'B', name: 'Unimeal', desc: 'Email → Savings Graph', color: '#4F46E5', Component: UnimealPaywall },
   { id: 'C', name: 'Parenting Leader', desc: 'Trust Badges + Gift', color: '#059669', Component: ParentingLeaderPaywall },
   { id: 'D', name: 'Nerva', desc: 'Expert Panel + Results Date', color: '#0284C7', Component: NervaPaywall },
@@ -27,11 +27,11 @@ const PAYWALLS = [
   { id: 'F', name: 'Sofa Yoga', desc: 'Triple Urgency + Promo Code', color: '#DC2626', Component: SofaYogaPaywall },
   { id: 'G', name: 'Effecto', desc: 'Science-Minimal', color: '#0891B2', Component: EffectoPaywall },
   { id: 'H', name: 'BetterMe', desc: 'Premium Dark UI', color: '#1a1a2e', Component: BetterMePaywall },
-  { id: 'I', name: 'TodayIsTheDay', desc: 'Before/After + Intro Pricing', color: '#FF2A6D', Component: TodayIsTheDayPaywall },
+  { id: 'I', name: 'TodayIsTheDay', desc: 'Before/After + Intro Pricing', color: '#F5326D', Component: TodayIsTheDayPaywall },
   { id: 'J', name: 'The Coach', desc: 'Expert Cards + SAVE 78%', color: '#F59E0B', Component: TheCoachPaywall },
   { id: 'K', name: 'Slowdive', desc: 'Live Counter + Per-Day Price', color: '#10B981', Component: SlowdivePaywall },
   { id: 'L', name: 'Nebula', desc: 'One-Time $19.99 Report', color: '#6366F1', Component: NebulaPaywall },
-  { id: 'M', name: 'Keto Cycle', desc: 'Conditional Refund + Preview', color: '#FF2A6D', Component: KetoCyclePaywall },
+  { id: 'M', name: 'Keto Cycle', desc: 'Conditional Refund + Preview', color: '#F5326D', Component: KetoCyclePaywall },
   { id: 'N', name: 'Helpido', desc: '77% Discount + Emotional', color: '#DC2626', Component: HelpidoPaywall },
 ];
 

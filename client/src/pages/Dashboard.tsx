@@ -20,7 +20,7 @@ export function Dashboard({ darkMode, toggleDark }: Props) {
           <div className="flex items-center gap-3">
             {/* OF Logo */}
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-label="Outfit Formulas" role="img">
-              <rect width="32" height="32" rx="8" fill="hsl(340 100% 58%)" />
+              <rect width="32" height="32" rx="8" fill="hsl(341 91% 58%)" />
               <text x="7" y="22" fontFamily="Inter, sans-serif" fontWeight="900" fontSize="15" fill="white">OF</text>
             </svg>
             <div>

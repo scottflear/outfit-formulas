@@ -9,7 +9,7 @@ export function ProgressBar({ percent }: ProgressBarProps) {
     <div className="w-full h-1 bg-muted rounded-full overflow-hidden">
       <motion.div
         className="h-full rounded-full"
-        style={{ background: 'hsl(340 100% 58%)' }}
+        style={{ background: 'hsl(341 91% 58%)' }}
         initial={{ width: 0 }}
         animate={{ width: `${Math.min(100, Math.max(0, percent))}%` }}
         transition={{ duration: 0.4, ease: 'easeOut' }}

@@ -106,7 +106,7 @@ export function SofaYogaPaywall({ userName, onBuy }: Props) {
         <motion.button
           data-testid="buy-button"
           className="w-full mt-5 py-4 rounded-xl font-black text-white text-base"
-          style={{ background: 'hsl(340 100% 58%)' }}
+          style={{ background: 'hsl(341 91% 58%)' }}
           onClick={onBuy}
           whileTap={{ scale: 0.98 }}
         >
@@ -131,7 +131,7 @@ export function SofaYogaPaywall({ userName, onBuy }: Props) {
         </div>
         <motion.button
           className="flex-1 py-3 rounded-xl font-black text-white text-sm"
-          style={{ background: 'hsl(340 100% 58%)' }}
+          style={{ background: 'hsl(341 91% 58%)' }}
           onClick={onBuy}
           whileTap={{ scale: 0.97 }}
           data-testid="sticky-buy-button"

@@ -113,7 +113,7 @@ export function SmartyMePaywall({ userName, onBuy }: Props) {
         <motion.button
           data-testid="buy-button"
           className="w-full mt-6 py-4 rounded-xl font-black text-white text-base"
-          style={{ background: 'hsl(340 100% 58%)' }}
+          style={{ background: 'hsl(341 91% 58%)' }}
           onClick={onBuy}
           whileTap={{ scale: 0.98 }}
         >

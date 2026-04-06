@@ -55,7 +55,7 @@ export function MultiSelect({ screen, onAnswer }: Props) {
       <motion.button
         data-testid="next-button"
         className="w-full py-3.5 rounded-xl font-bold text-sm text-white disabled:opacity-40 transition-opacity"
-        style={{ background: selected.size > 0 ? 'hsl(340 100% 58%)' : undefined, backgroundColor: selected.size === 0 ? 'hsl(0 0% 70%)' : undefined }}
+        style={{ background: selected.size > 0 ? 'hsl(341 91% 58%)' : undefined, backgroundColor: selected.size === 0 ? 'hsl(0 0% 70%)' : undefined }}
         disabled={selected.size === 0}
         onClick={() => onAnswer(Array.from(selected).map(i => screen.options![i].label))}
         whileTap={{ scale: 0.98 }}

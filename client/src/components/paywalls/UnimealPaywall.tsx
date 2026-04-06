@@ -45,7 +45,7 @@ export function UnimealPaywall({ userName, onBuy }: Props) {
                   className="w-full rounded-t-md transition-all"
                   style={{
                     height: `${(savings[i] / 1200) * 88}px`,
-                    background: i === 0 ? 'hsl(0 0% 80%)' : 'hsl(340 100% 58%)',
+                    background: i === 0 ? 'hsl(0 0% 80%)' : 'hsl(341 91% 58%)',
                     minHeight: '4px'
                   }}
                 />
@@ -101,7 +101,7 @@ export function UnimealPaywall({ userName, onBuy }: Props) {
           <motion.button
             data-testid="buy-button"
             className="w-full py-4 rounded-xl font-black text-white text-base"
-            style={{ background: 'hsl(340 100% 58%)' }}
+            style={{ background: 'hsl(341 91% 58%)' }}
             onClick={onBuy}
             whileTap={{ scale: 0.98 }}
           >

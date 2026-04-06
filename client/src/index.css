@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================
+   OUTFIT FORMULAS BRAND PALETTE — from Brand Guidelines 2025
+   Primary Pink:  #F5326D  (hsl 341 91% 58%)
+   Soft Pink:     #FFD4E1  (hsl 341 100% 91%)
+   Peach:         #DDB2B0  (hsl 1 36% 77%)
+   Deep Purple:   #313847  (hsl 222 19% 24%) — dark bg
+   Deep Blue:     #131818  (hsl 180 10% 9%)  — darkest
+   Gray:          #393E4F  (hsl 228 14% 27%) — card dark bg
+   White:         #FFFFFF
+   Mid Gray:      #989AB7  (hsl 235 17% 63%)
+   Font:          Poppins (primary), Brittany Signature (accents)
+   ============================================================ */
+
 /* LIGHT MODE */
 :root {
   --button-outline: rgba(0,0,0, .10);
@@ -9,41 +22,51 @@
   --opaque-button-border-intensity: -8;
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
-  --background: 18 100% 99%;
-  --foreground: 0 0% 12%;
-  --border: 20 20% 90%;
-  --card: 20 50% 98%;
-  --card-foreground: 0 0% 12%;
-  --card-border: 20 30% 92%;
-  --sidebar: 20 40% 97%;
-  --sidebar-foreground: 0 0% 12%;
-  --sidebar-border: 20 20% 91%;
-  --sidebar-primary: 340 100% 58%;
+
+  /* OF Brand: White background, Deep Purple text */
+  --background: 0 0% 100%;
+  --foreground: 222 19% 24%;
+  --border: 341 30% 90%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 19% 24%;
+  --card-border: 341 30% 90%;
+  --sidebar: 341 100% 98%;
+  --sidebar-foreground: 222 19% 24%;
+  --sidebar-border: 341 30% 90%;
+
+  /* OF Primary Pink: #F5326D = hsl(341, 91%, 58%) */
+  --sidebar-primary: 341 91% 58%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 340 80% 95%;
-  --sidebar-accent-foreground: 0 0% 12%;
-  --sidebar-ring: 340 100% 58%;
-  --popover: 20 50% 98%;
-  --popover-foreground: 0 0% 12%;
-  --popover-border: 20 20% 90%;
-  --primary: 340 100% 58%;
+  --sidebar-accent: 341 100% 95%;
+  --sidebar-accent-foreground: 222 19% 24%;
+  --sidebar-ring: 341 91% 58%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 19% 24%;
+  --popover-border: 341 30% 90%;
+  --primary: 341 91% 58%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 20 20% 93%;
-  --secondary-foreground: 0 0% 12%;
-  --muted: 20 10% 94%;
-  --muted-foreground: 0 0% 42%;
-  --accent: 340 80% 95%;
-  --accent-foreground: 0 0% 12%;
+
+  /* OF Soft Pink as secondary: #FFD4E1 = hsl(341, 100%, 91%) */
+  --secondary: 341 100% 91%;
+  --secondary-foreground: 222 19% 24%;
+  --muted: 341 50% 96%;
+  --muted-foreground: 222 14% 50%;
+
+  /* OF Soft Pink accent */
+  --accent: 341 100% 95%;
+  --accent-foreground: 222 19% 24%;
   --destructive: 0 84% 42%;
   --destructive-foreground: 0 0% 98%;
-  --input: 20 15% 82%;
-  --ring: 340 100% 58%;
-  --chart-1: 340 100% 58%;
-  --chart-2: 262 83% 48%;
-  --chart-3: 173 58% 39%;
-  --chart-4: 43 74% 49%;
-  --chart-5: 27 87% 55%;
-  --font-sans: Inter, sans-serif;
+  --input: 341 30% 85%;
+  --ring: 341 91% 58%;
+  --chart-1: 341 91% 58%;
+  --chart-2: 1 36% 77%;
+  --chart-3: 341 100% 91%;
+  --chart-4: 235 17% 63%;
+  --chart-5: 222 19% 24%;
+
+  /* OF Brand Font: Poppins */
+  --font-sans: 'Poppins', sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
   --radius: .5rem;
@@ -88,45 +111,55 @@
 }
 
 .dark {
+  /* OF Dark mode: Deep Purple #313847 bg, Soft Pink text highlights */
   --button-outline: rgba(255,255,255, .10);
   --badge-outline: rgba(255,255,255, .05);
   --opaque-button-border-intensity: 9;
   --elevate-1: rgba(255,255,255, .04);
   --elevate-2: rgba(255,255,255, .09);
-  --background: 0 0% 12%;
-  --foreground: 20 20% 95%;
-  --border: 0 0% 20%;
-  --card: 0 0% 14%;
-  --card-foreground: 20 20% 95%;
-  --card-border: 0 0% 18%;
-  --sidebar: 0 0% 13%;
-  --sidebar-foreground: 20 20% 95%;
-  --sidebar-border: 0 0% 18%;
-  --sidebar-primary: 340 100% 62%;
+
+  /* OF Deep Purple: #313847 = hsl(222, 19%, 24%) */
+  --background: 222 19% 24%;
+  /* OF Soft Pink on dark: #FFD4E1 ish */
+  --foreground: 341 100% 93%;
+  --border: 228 14% 32%;
+
+  /* OF Gray: #393E4F = hsl(228, 14%, 27%) */
+  --card: 228 14% 27%;
+  --card-foreground: 341 100% 93%;
+  --card-border: 228 14% 33%;
+  --sidebar: 222 19% 21%;
+  --sidebar-foreground: 341 100% 93%;
+  --sidebar-border: 228 14% 30%;
+
+  /* OF Primary Pink stays vibrant in dark mode */
+  --sidebar-primary: 341 91% 62%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 0 0% 18%;
-  --sidebar-accent-foreground: 20 20% 95%;
-  --sidebar-ring: 340 100% 62%;
-  --popover: 0 0% 16%;
-  --popover-foreground: 20 20% 95%;
-  --popover-border: 0 0% 20%;
-  --primary: 340 100% 62%;
+  --sidebar-accent: 228 14% 33%;
+  --sidebar-accent-foreground: 341 100% 93%;
+  --sidebar-ring: 341 91% 62%;
+
+  /* OF Deep Blue: #131818 = hsl(180, 10%, 9%) for popover */
+  --popover: 228 14% 22%;
+  --popover-foreground: 341 100% 93%;
+  --popover-border: 228 14% 32%;
+  --primary: 341 91% 62%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 0 0% 18%;
-  --secondary-foreground: 20 20% 95%;
-  --muted: 0 0% 18%;
-  --muted-foreground: 0 0% 58%;
-  --accent: 340 30% 20%;
-  --accent-foreground: 20 20% 95%;
-  --destructive: 0 84% 42%;
+  --secondary: 228 14% 32%;
+  --secondary-foreground: 341 100% 93%;
+  --muted: 228 14% 30%;
+  --muted-foreground: 235 17% 63%;
+  --accent: 341 30% 28%;
+  --accent-foreground: 341 100% 93%;
+  --destructive: 0 84% 50%;
   --destructive-foreground: 0 0% 98%;
-  --input: 0 0% 28%;
-  --ring: 340 100% 62%;
-  --chart-1: 340 100% 62%;
-  --chart-2: 262 83% 68%;
-  --chart-3: 173 58% 55%;
-  --chart-4: 43 74% 65%;
-  --chart-5: 27 87% 65%;
+  --input: 228 14% 35%;
+  --ring: 341 91% 62%;
+  --chart-1: 341 91% 62%;
+  --chart-2: 1 36% 77%;
+  --chart-3: 341 100% 85%;
+  --chart-4: 235 17% 70%;
+  --chart-5: 222 19% 60%;
   --shadow-2xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
   --shadow-xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
   --shadow-sm: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 1px 2px -1px hsl(0 0% 0% / 0.00);
@@ -172,7 +205,39 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    font-feature-settings: "kern" 1, "liga" 1;
   }
+
+  /* Poppins weight utilities for OF brand hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Brittany Signature — used sparingly for quote/callout accents */
+@font-face {
+  font-family: 'Brittany';
+  src: url('https://fonts.cdnfonts.com/s/15271/BrittanySignature.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Dancing Script = OF Brittany Signature analogue — loaded via Google Fonts */
+.font-script {
+  font-family: 'Dancing Script', 'Brittany', cursive;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* OF Brand: Soft pink gradient for special backgrounds */
+.bg-of-gradient {
+  background: linear-gradient(135deg, #FFD4E1 0%, #ffffff 60%);
+}
+
+.bg-of-gradient-strong {
+  background: linear-gradient(135deg, #FFD4E1 0%, #F5326D 100%);
 }
 
 /**

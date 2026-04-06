@@ -8,7 +8,7 @@ interface Props {
 }
 
 const PAYWALL_CONFIG: Record<string, { color: string; short: string }> = {
-  A: { color: '#FF2A6D', short: 'Countdown + Trial' },
+  A: { color: '#F5326D', short: 'Countdown + Trial' },
   B: { color: '#4F46E5', short: 'Email → Savings Graph' },
   C: { color: '#059669', short: 'Trust Badges + Gift' },
   D: { color: '#0284C7', short: 'Expert Panel + Date' },
@@ -16,16 +16,16 @@ const PAYWALL_CONFIG: Record<string, { color: string; short: string }> = {
   F: { color: '#DC2626', short: 'Triple Urgency + Promo' },
   G: { color: '#0891B2', short: 'Science-Minimal' },
   H: { color: '#1a1a2e', short: 'Premium / Dark UI' },
-  I: { color: '#FF2A6D', short: 'Before/After + Intro' },
+  I: { color: '#F5326D', short: 'Before/After + Intro' },
   J: { color: '#F59E0B', short: 'Expert Endorsements' },
   K: { color: '#10B981', short: 'Live Counter + Per-Day' },
   L: { color: '#6366F1', short: 'One-Time Report $19.99' },
-  M: { color: '#FF2A6D', short: 'Conditional Refund' },
+  M: { color: '#F5326D', short: 'Conditional Refund' },
   N: { color: '#DC2626', short: '77% Discount + Emotional' },
 };
 
 export function FunnelCard({ funnel, onClick }: Props) {
-  const config = PAYWALL_CONFIG[funnel.id] || { color: '#FF2A6D', short: 'Paywall' };
+  const config = PAYWALL_CONFIG[funnel.id] || { color: '#F5326D', short: 'Paywall' };
 
   return (
     <motion.button

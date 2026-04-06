@@ -47,11 +47,11 @@ export function NebulaPaywall({ userName, onBuy }: Props) {
         <div className="mt-5 flex flex-col items-center">
           <div className="relative w-28 h-28">
             <svg className="w-28 h-28 -rotate-90" viewBox="0 0 112 112">
-              <circle cx="56" cy="56" r="40" fill="none" stroke="hsl(340 100% 58% / 0.15)" strokeWidth="8" />
+              <circle cx="56" cy="56" r="40" fill="none" stroke="hsl(341 91% 58% / 0.15)" strokeWidth="8" />
               <motion.circle
                 cx="56" cy="56" r="40"
                 fill="none"
-                stroke="hsl(340 100% 58%)"
+                stroke="hsl(341 91% 58%)"
                 strokeWidth="8"
                 strokeLinecap="round"
                 strokeDasharray={251}
@@ -102,7 +102,7 @@ export function NebulaPaywall({ userName, onBuy }: Props) {
           <motion.button
             data-testid="buy-button"
             className="w-full mt-3 py-4 rounded-xl font-black text-white text-base"
-            style={{ background: 'hsl(340 100% 58%)' }}
+            style={{ background: 'hsl(341 91% 58%)' }}
             onClick={onBuy}
             whileTap={{ scale: 0.98 }}
           >

@@ -44,7 +44,7 @@ export function EmailCapture({ screen, onAnswer }: Props) {
       <motion.button
         data-testid="submit-email-button"
         className="w-full py-3.5 rounded-xl font-bold text-sm text-white disabled:opacity-40 transition-opacity"
-        style={{ background: valid ? 'hsl(340 100% 58%)' : undefined, backgroundColor: !valid ? 'hsl(0 0% 70%)' : undefined }}
+        style={{ background: valid ? 'hsl(341 91% 58%)' : undefined, backgroundColor: !valid ? 'hsl(0 0% 70%)' : undefined }}
         disabled={!valid}
         onClick={() => valid && onAnswer(email)}
         whileTap={{ scale: 0.98 }}

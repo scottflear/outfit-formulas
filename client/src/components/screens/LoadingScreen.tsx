@@ -31,11 +31,11 @@ export function LoadingScreen({ screen, onComplete, userName }: Props) {
     <div className="flex flex-col items-center gap-6 py-6">
       <div className="relative w-24 h-24">
         <svg className="w-24 h-24 -rotate-90" viewBox="0 0 96 96">
-          <circle cx="48" cy="48" r="40" fill="none" stroke="hsl(340 100% 58% / 0.15)" strokeWidth="6" />
+          <circle cx="48" cy="48" r="40" fill="none" stroke="hsl(341 91% 58% / 0.15)" strokeWidth="6" />
           <motion.circle
             cx="48" cy="48" r="40"
             fill="none"
-            stroke="hsl(340 100% 58%)"
+            stroke="hsl(341 91% 58%)"
             strokeWidth="6"
             strokeLinecap="round"
             strokeDasharray={251}

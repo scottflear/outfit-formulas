@@ -17,7 +17,7 @@ export function FunnelQuiz() {
           <p className="text-sm text-muted-foreground mb-4">Funnel "{params.id}" doesn't exist.</p>
           <button
             className="px-4 py-2 rounded-xl text-sm font-bold text-white"
-            style={{ background: 'hsl(340 100% 58%)' }}
+            style={{ background: 'hsl(341 91% 58%)' }}
             onClick={() => navigate('/')}
           >
             ← Back to Dashboard

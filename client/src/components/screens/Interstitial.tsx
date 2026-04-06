@@ -15,7 +15,8 @@ export function Interstitial({ screen, onContinue, userName }: Props) {
       {/* Quote */}
       {screen.quote && (
         <div className="bg-accent rounded-xl p-4 border-l-4 border-primary">
-          <p className="text-sm italic text-foreground leading-relaxed font-medium">
+          {/* Brittany Signature for quote accent — OF brand typography */}
+          <p className="font-script text-xl text-foreground leading-snug mb-1">
             {screen.quote}
           </p>
           <p className="text-xs text-muted-foreground mt-2">— Shared by 73% of women in this quiz</p>
@@ -60,7 +61,7 @@ export function Interstitial({ screen, onContinue, userName }: Props) {
               transition={{ delay: i * 0.1 }}
             >
               <div className="text-yellow-500 text-sm mb-2">{'⭐'.repeat(t.stars)}</div>
-              <p className="text-sm text-foreground leading-relaxed italic mb-2">"{t.text}"</p>
+              <p className="font-script text-lg text-foreground leading-snug mb-2">"{t.text}"</p>
               <p className="text-xs text-muted-foreground font-semibold">— {t.author}</p>
             </motion.div>
           ))}
@@ -71,7 +72,7 @@ export function Interstitial({ screen, onContinue, userName }: Props) {
       <motion.button
         data-testid="continue-button"
         className="w-full py-3.5 rounded-xl font-bold text-sm text-white"
-        style={{ background: 'hsl(340 100% 58%)' }}
+        style={{ background: 'hsl(341 91% 58%)' }}
         onClick={onContinue}
         whileTap={{ scale: 0.98 }}
       >

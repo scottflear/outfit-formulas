@@ -29,7 +29,7 @@ export function LikertScale({ screen, onAnswer }: Props) {
           >
             <motion.div
               className="w-full aspect-square rounded-xl border-2 border-border bg-card hover:border-primary hover:bg-accent transition-colors flex items-center justify-center"
-              whileHover={{ borderColor: 'hsl(340 100% 58%)' }}
+              whileHover={{ borderColor: 'hsl(341 91% 58%)' }}
               transition={{ duration: 0.1 }}
             >
               <span className="text-sm font-bold text-muted-foreground">{val}</span>

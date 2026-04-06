@@ -35,7 +35,7 @@ export function ResultsScreen({ screen, onContinue, userName, funnelId }: Props)
           <div className="mt-4 bg-muted rounded-full h-3 relative overflow-hidden">
             <motion.div
               className="h-full rounded-full"
-              style={{ background: 'hsl(340 100% 58%)' }}
+              style={{ background: 'hsl(341 91% 58%)' }}
               initial={{ width: 0 }}
               animate={{ width: `${(screen.resultScore / 80) * 100}%` }}
               transition={{ delay: 0.5, duration: 0.8 }}
@@ -78,7 +78,7 @@ export function ResultsScreen({ screen, onContinue, userName, funnelId }: Props)
       <motion.button
         data-testid="see-plan-button"
         className="w-full py-3.5 rounded-xl font-bold text-sm text-white"
-        style={{ background: 'hsl(340 100% 58%)' }}
+        style={{ background: 'hsl(341 91% 58%)' }}
         onClick={onContinue}
         whileTap={{ scale: 0.98 }}
       >

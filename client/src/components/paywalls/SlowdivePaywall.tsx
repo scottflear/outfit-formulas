@@ -104,7 +104,7 @@ export function SlowdivePaywall({ userName, onBuy }: Props) {
         </div>
         <motion.button
           className="flex-1 py-3 rounded-xl font-black text-white text-sm"
-          style={{ background: 'hsl(340 100% 58%)' }}
+          style={{ background: 'hsl(341 91% 58%)' }}
           onClick={onBuy}
           whileTap={{ scale: 0.97 }}
           data-testid="buy-button"
