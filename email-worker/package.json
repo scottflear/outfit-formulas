@@ -1,0 +1,10 @@
+{
+  "name": "outfit-formulas-email-worker",
+  "version": "1.0.0",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@aws-sdk/client-ses": "^3.535.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.0"
+  }
+}
