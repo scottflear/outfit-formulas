@@ -56,6 +56,19 @@ export function QuizEngine({ funnel }: Props) {
   const [, navigate] = useLocation();
   const { toast } = useToast();
 
+  const submitLead = (email: string) => {
+    fetch('/api/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email,
+        funnel_id: funnel.id,
+        archetype: funnel.archetype,
+        first_name: userName || undefined,
+      }),
+    }).catch((err) => console.error('[leads]', err));
+  };
+
   const screen = funnel.screens[currentIndex];
   const total = funnel.screens.length;
 
@@ -79,6 +92,10 @@ export function QuizEngine({ funnel }: Props) {
     // Capture name from text-input
     if (screen.type === 'text-input' && typeof answer === 'string') {
       setUserName(answer);
+    }
+    // Submit lead to Supabase when email is captured (fire-and-forget)
+    if (screen.type === 'email-capture' && typeof answer === 'string') {
+      submitLead(answer);
     }
     advance();
   };
